@@ -18,7 +18,7 @@ function updateCountdown() {
     }
 
     // fallback: جرب تحليل سلسلة ISO (بتنسيق صحيح) ثم انتحل إلى منشئ أرقام إن فشل التحليل
-    const iso = '2026-08-12T00:00:00';
+    const iso = '2026-10-10T00:00:00';
     const parsed = new Date(iso);
     if (!isNaN(parsed.getTime())) return parsed;
     // افتراضي آمن: 12 أغسطس 2026 (ملاحظة: الشهر هنا 0-based لذلك أغسطس = 7)
